@@ -15,6 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $sayHello = "Hello";
+    $frameworks = ["Bootstrap", "Vue.js", "laravel"];
 
-    return view('Home', compact("sayHello"));
+    $data = [
+        "sayHello" => "Hello",
+        "frameWorks" => [
+            "Bootstrap",
+            "Vue.js",
+            "Laravel"
+        ]
+    ];
+
+    return view('Home', $data);
 });

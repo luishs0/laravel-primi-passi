@@ -10,6 +10,13 @@
 
 <body>
     <h1>{{ $sayHello }} World</h1>
+
+    <h4>FrameWorks:</h4>
+    <ul>
+        @foreach ($frameWorks as $frameWork)
+        <li>{{ $frameWork }}</li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
